@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>FPS QR Code Generator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div id="qrcode" class="contact1-pic">
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					FPS QR Code Generator
+				</span>
+
+			
+
+				<div class="wrap-input1 validate-input">
+					
+					<input type="text" class="input1" name="account" value="02" style="display: none;"></input>
+				</div>
+
+				
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1 account" name="fps_id" value="1530302" style="display: none;"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+			
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1" name="mcc" value="0000"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1" name="currency" value="344"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1" name="amount" placeholder="Amount"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1" name="reference" placeholder="Account"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<textarea class="input1" name="message" placeholder="Message" style="display: none;"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input">
+					<input type="text" class="input1" name="hash" placeholder="Hash" style="display: none;"></input>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>Pay Now!</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="js/pad.js"></script>
+	<script src="js/emv-code.js"></script>
+	<script src="js/crc-16-ccitt.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
